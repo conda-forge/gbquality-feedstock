@@ -2,16 +2,16 @@
 {% set version = "0.21" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 73aab4b384dadc20790a8983551c77f835853d2603864d89f5b0f44b5ca0301b
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -31,11 +31,11 @@ test:
     - gbquality
 
 about:
-  home: "https://github.com/AndLen/gbquality"
+  home: https://github.com/AndLen/gbquality
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: "Python translation of the original MATLAB code for the GB measure."
+  summary: Python translation of the original MATLAB code for the GB measure.
   dev_url: https://github.com/AndLen/gbquality
 
 extra:
