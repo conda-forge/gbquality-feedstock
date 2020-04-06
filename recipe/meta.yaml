@@ -18,11 +18,13 @@ requirements:
   host:
     - pip
     - python >=3.4
+    - numba >=0.47.0
   run:
     - numpy
     - python >=3.4
     - scikit-learn
     - scipy
+    - numba >=0.47.0
 
 test:
   imports:
