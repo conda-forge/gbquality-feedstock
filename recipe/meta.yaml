@@ -1,5 +1,5 @@
 {% set name = "gbquality" %}
-{% set version = "0.21" %}
+{% set version = "0.31" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 73aab4b384dadc20790a8983551c77f835853d2603864d89f5b0f44b5ca0301b
+  sha256: 29097025e73f5cfcbdfad6d2bf67e8b7d7d1f7659a1bc0db065287dd3d6a7420
 
 build:
   number: 0
